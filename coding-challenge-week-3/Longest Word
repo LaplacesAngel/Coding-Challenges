@@ -1,0 +1,15 @@
+function LongestWord(sen) {
+  // code goes here
+  const noSpecialChars = sen.replace(/[^a-zA-Z0-9 ]/g, "");
+
+  sen = noSpecialChars.split(" ");
+
+  sen.sort(function (a, b) {
+    return b.length - a.length;
+  });
+
+  return sen[0];
+}
+
+// keep this function call here
+console.log(LongestWord(readline()));
