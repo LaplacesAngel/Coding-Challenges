@@ -8,7 +8,7 @@
 // addition(-3) ➞ -2
 
 const addition = (a) => {
-    return a + 1;
-}
+  return a + 1;
+};
 
 console.log(addition(-3));
