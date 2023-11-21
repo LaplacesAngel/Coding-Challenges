@@ -1,0 +1,5 @@
+list = ['a', 'b', 'a', 'c', 'a', 'd']
+
+#TODO remove duplicates while retaining list order
+
+ 
