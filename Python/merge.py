@@ -5,10 +5,12 @@ list2 = [4,4,5,6,7,8,9]
 
 
 
-def mergeArrays(arrayA, arrayB):
+def mergeArrays(arrayA, arrayB = [1,2,3]):
     return sorted(set(arrayA + arrayB))
 
 
 merged = mergeArrays(list1, list2)
 
 print(merged)
+
+print(mergeArrays(merged) + list1)
