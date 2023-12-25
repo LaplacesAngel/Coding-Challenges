@@ -30,3 +30,22 @@
 
 # 2 <= s.length <= 500
 # The string s consists of characters '0' and '1' only.
+
+#TODO get 1 to the power of twenty
+
+# x = 1
+# y = 20
+
+count = 1
+for i in range(1,21):
+    print(i)
+    print(2**i)
+    print(f"count is {count}")
+    count += 1
+
+for i in range(1, 21):
+    power = 1
+    for _ in range(i):
+        print(power)
+        power = power * 2
+        print(power)
