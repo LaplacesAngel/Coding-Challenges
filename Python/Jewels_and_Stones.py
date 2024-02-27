@@ -19,12 +19,10 @@
 #can make a variable called prev which will return the value of how many times the jewel has been seen previously and add that to the total
 #then add 1 to that value
 
-
+#nested for loop version
 def numJewelsInStones(jewels, stones):
 
     total = 0
-    counts = {}
-
 
     for stone in stones:
         for jewel in jewels:
@@ -33,5 +31,25 @@ def numJewelsInStones(jewels, stones):
 
 
     return total
+
+
+#dictionary version:
+
+def numsInJewelsInStonesDict(jewels, stones):
+
+    counts = {}
+    total = 0
+
+    for stone in stones:
+        if stone not in counts:
+            counts[stone] = 0
+        counts[stone] += 1
+
+    for jewel in jewels:
+        if jewel in counts:
+            total += counts[jewel]
     
-print(numJewelsInStones('z', "ZZ"))
+    return total
+
+    
+print(numsInJewelsInStonesDict('aA', "aAAbbbb"))
